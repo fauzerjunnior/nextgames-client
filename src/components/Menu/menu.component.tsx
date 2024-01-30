@@ -7,6 +7,7 @@ import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 import { Logo } from '@/components';
 import { useState } from 'react';
 import Button from '../Button/button.component';
+import MediaMatchComponent from '../MediaMatch/media-match.component';
 
 export type MenuProps = {
   username?: string;
@@ -17,13 +18,22 @@ const Menu = ({ username }: MenuProps) => {
 
   return (
     <S.Wrapper>
-      <S.IconWrapper onClick={() => setIsOpen(true)}>
-        <MenuIcon aria-label="Open Menu" />
-      </S.IconWrapper>
+      <MediaMatchComponent lessThan="medium">
+        <S.IconWrapper onClick={() => setIsOpen(true)}>
+          <MenuIcon aria-label="Open Menu" />
+        </S.IconWrapper>
+      </MediaMatchComponent>
 
       <S.LogoWrapper>
         <Logo hideOnMobile />
       </S.LogoWrapper>
+
+      <MediaMatchComponent greaterThan="medium">
+        <S.MenuNav>
+          <S.MenuLink href="#">Home</S.MenuLink>
+          <S.MenuLink href="#">Explore</S.MenuLink>
+        </S.MenuNav>
+      </MediaMatchComponent>
 
       <S.MenuGroup>
         <S.IconWrapper>
@@ -32,6 +42,12 @@ const Menu = ({ username }: MenuProps) => {
         <S.IconWrapper>
           <ShoppingCartIcon aria-label="Open shopping cart" />
         </S.IconWrapper>
+
+        {!username && (
+          <MediaMatchComponent greaterThan="medium">
+            <Button>Sign in</Button>
+          </MediaMatchComponent>
+        )}
       </S.MenuGroup>
 
       <S.MenuFull aria-hidden={!isOpen} isOpen={isOpen}>
