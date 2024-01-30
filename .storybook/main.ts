@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+import path from 'path';
+
 const config = {
   staticDirs: ['../public'],
   stories: ['../src/components/**/*.stories.tsx'],
@@ -10,7 +13,12 @@ const config = {
     autodocs: true
   },
   webpackFinal: (config) => {
-    config.resolve.modules.push(`${process.cwd()}/src`);
+    // config.resolve.modules.push(`${process.cwd()}/src`);
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@/components': path.resolve(__dirname, '../src/components')
+    };
+
     return config;
   }
 };
