@@ -6,8 +6,7 @@ import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 
 import { Logo } from '@/components';
 import { useState } from 'react';
-import Button from '../Button/button.component';
-import MediaMatchComponent from '../MediaMatch/media-match.component';
+import { Button, MediaMatch } from '@/components';
 
 export type MenuProps = {
   username?: string;
@@ -18,22 +17,22 @@ const Menu = ({ username }: MenuProps) => {
 
   return (
     <S.Wrapper>
-      <MediaMatchComponent lessThan="medium">
+      <MediaMatch lessThan="medium">
         <S.IconWrapper onClick={() => setIsOpen(true)}>
           <MenuIcon aria-label="Open Menu" />
         </S.IconWrapper>
-      </MediaMatchComponent>
+      </MediaMatch>
 
       <S.LogoWrapper>
         <Logo hideOnMobile />
       </S.LogoWrapper>
 
-      <MediaMatchComponent greaterThan="medium">
+      <MediaMatch greaterThan="medium">
         <S.MenuNav>
           <S.MenuLink href="#">Home</S.MenuLink>
           <S.MenuLink href="#">Explore</S.MenuLink>
         </S.MenuNav>
-      </MediaMatchComponent>
+      </MediaMatch>
 
       <S.MenuGroup>
         <S.IconWrapper>
@@ -44,9 +43,9 @@ const Menu = ({ username }: MenuProps) => {
         </S.IconWrapper>
 
         {!username && (
-          <MediaMatchComponent greaterThan="medium">
+          <MediaMatch greaterThan="medium">
             <Button>Sign in</Button>
-          </MediaMatchComponent>
+          </MediaMatch>
         )}
       </S.MenuGroup>
 
