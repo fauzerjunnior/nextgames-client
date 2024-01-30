@@ -4,13 +4,13 @@ import media from 'styled-media-query';
 
 const wrapperModifiers = {
   normal: () => css`
-    width: 11rem;
-    height: 3.3rem;
+    width: 15rem;
+    height: 4.5rem;
   `,
 
   large: () => css`
-    width: 20rem;
-    height: 5.9rem;
+    width: 27rem;
+    height: 7rem;
   `,
 
   hideOnMobile: () => css`
@@ -35,6 +35,6 @@ export const Wrapper = styled.main<LogoProps>`
     color: ${theme.colors[color!]};
 
     ${!!size && wrapperModifiers[size]}
-    ${!!hideOnMobile && wrapperModifiers.hideOnMobile}
+    ${!!hideOnMobile && wrapperModifiers.hideOnMobile()}
   `}
 `;
