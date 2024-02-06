@@ -27,7 +27,7 @@ describe('Logo', () => {
     const logoComponent = screen.getByLabelText(/Next Games/i).parentElement;
 
     expect(logoComponent).toHaveStyle({
-      width: '11rem'
+      width: '15rem'
     });
   });
 
@@ -36,7 +36,7 @@ describe('Logo', () => {
     const logoComponent = screen.getByLabelText(/Next Games/i).parentElement;
 
     expect(logoComponent).toHaveStyle({
-      width: '20rem'
+      width: '27rem'
     });
   });
 
