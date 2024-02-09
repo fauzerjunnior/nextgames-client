@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner should render the Banner 1`] = `
+.c0 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #ff5f5f 0%, #f062c0 50%);
+  color: #FAFAFA;
+  border: 0;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+  height: 4rem;
+  font-size: 1.4rem;
+  padding: 0.8rem 3.2rem;
+}
+
+.c0:hover {
+  background: linear-gradient(180deg, #e35565 0%, #d958a6 50%);
+}
+
+<main
+  class=""
+>
+  <div
+    aria-label="Defy death"
+    class=""
+    role="img"
+    src="img/test.jpg"
+  />
+  <div
+    class=""
+  >
+    <h2
+      class=""
+    >
+      Defy death
+    </h2>
+    <h3
+      class=""
+    >
+      <p>
+        Play the new 
+        <strong>
+          CrashLands
+        </strong>
+         season
+      </p>
+    </h3>
+    <a
+      class="c0"
+      href="/games/crashlands"
+    >
+      <span>
+        Buy now
+      </span>
+    </a>
+  </div>
+</main>
+`;
