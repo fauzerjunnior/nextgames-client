@@ -9,7 +9,8 @@ export default {
     subtitle: 'Come see John’s new adventures',
     buttonLabel: 'Buy now',
     buttonLink: '/buy',
-    backgroundImage: '/img/highlight-image.png'
+    backgroundImage: '/img/highlight-image.png',
+    alignment: 'right'
   }
 } as Meta;
 
