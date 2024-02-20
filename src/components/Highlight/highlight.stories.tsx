@@ -14,5 +14,17 @@ export default {
 } as Meta;
 
 export const Default: StoryFn<HighlightProps> = (args) => (
-  <Highlight {...args} />
+  <div style={{ maxWidth: '104rem' }}>
+    <Highlight {...args} />
+  </div>
 );
+
+export const WithFloatImage: StoryFn<HighlightProps> = (args) => (
+  <div style={{ maxWidth: '104rem' }}>
+    <Highlight {...args} />
+  </div>
+);
+
+WithFloatImage.args = {
+  floatImage: '/img/highlight-art.png'
+};
