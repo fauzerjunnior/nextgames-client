@@ -9,12 +9,11 @@ export default {
     developer: 'Rockstar Games',
     img: 'https://source.unsplash.com/user/willianjusten/300x140',
     price: 'R$ 235,00',
-    promotionalPrice: 'R$ 200,00'
+    promotionalPrice: 'R$ 215,00'
   },
-  parameters: {
-    backgrounds: {
-      default: 'dark'
-    }
+  argTypes: {
+    onFav: { action: 'clicked' },
+    ribbon: { type: 'string' }
   }
 } as Meta;
 
@@ -23,3 +22,15 @@ export const Default: StoryFn<GameCardProps> = (args) => (
     <GameCard {...args} />
   </div>
 );
+
+export const WithRibbon: StoryFn<GameCardProps> = (args) => (
+  <div style={{ width: '30rem' }}>
+    <GameCard {...args} />
+  </div>
+);
+
+WithRibbon.args = {
+  ribbon: '20% OFF',
+  ribbonSize: 'small',
+  ribbonColor: 'primary'
+};
