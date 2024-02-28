@@ -1,55 +1,39 @@
-![Next Games](https://raw.githubusercontent.com/fauzerjunnior/nextgames-client/main/public/logo.png)
+<p align="center">
+<img src="https://imgur.com/YiiMUZX.png" width="350" title="Next Games Client">
+</p>
 
-## What is inside?
+<h2 align="center">
+  Next Games Client • 🎲 🛒
+</h2>
 
-This project uses lot of stuff as:
+<p align="center">
+  <img alt="Typescript" src="https://img.shields.io/npm/types/typescript?color=f0f0f5&labelColor=3a3a3a">
+  <a href="https://github.com/fauzerjunnior/nextgames-client/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/fauzerjunnior/nextgames-client?color=f0f0f5&labelColor=3a3a3a">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-grey?color=f0f0f5&labelColor=3a3a3a">
+</p>
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+O projeto Next Games é um e-commerce desenvolvido do zero utilizando boas práticas de testes (TDD) e design. Se trata de uma aplicação em Next.js, Strapi CMS e GraphQL. Os componentes estão desenvolvidos com storybook, 100% de coverage e automatização para criação de componentes.
 
-## Getting Started
+## O que foi usado nos projetos
 
-First, run the development server:
+- Typescript
+- Next.js
+- Styled Components
+- Jest
+- RTL
+- Storybook
+- ESLint
+- Prettier
+- Husky
+- Plop
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Boas práticas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Commands
-
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- TDD
+- Cobertura de testes de 100%
+- Testes E2E
+- Componentização com storybook
+- Clean code
+- SOLID
