@@ -6,3 +6,4 @@ export { default as Button } from './Button/button.component';
 export { default as Ribbon } from './Ribbon/ribbon.component';
 export { default as Banner } from './Banner/banner.component';
 export { default as Slider } from './Slider/slider.component';
+export { default as GameCard } from './GameCard/game-card.component';
