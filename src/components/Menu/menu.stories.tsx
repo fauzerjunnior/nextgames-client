@@ -3,7 +3,12 @@ import Menu, { MenuProps } from './menu.component';
 
 export default {
   title: 'Menu',
-  component: Menu
+  component: Menu,
+  parameters: {
+    backgrounds: {
+      default: 'next-dark'
+    }
+  }
 } as Meta;
 
 export const Default: StoryObj<MenuProps> = {

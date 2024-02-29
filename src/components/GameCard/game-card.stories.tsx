@@ -4,6 +4,11 @@ import GameCard, { GameCardProps } from './game-card.component';
 export default {
   title: 'GameCard',
   component: GameCard,
+  parameters: {
+    backgrounds: {
+      default: 'next-dark'
+    }
+  },
   args: {
     title: 'Population Zero',
     developer: 'Rockstar Games',
