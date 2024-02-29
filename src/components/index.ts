@@ -1,4 +1,5 @@
 export { default as Logo } from './Logo/logo.component';
+export { default as Footer } from './Footer/footer.component';
 export { default as Menu } from './Menu/menu.component';
 export { default as MediaMatch } from './MediaMatch/media-match.component';
 export { default as Heading } from './Heading/heading.component';
@@ -7,3 +8,4 @@ export { default as Ribbon } from './Ribbon/ribbon.component';
 export { default as Banner } from './Banner/banner.component';
 export { default as Slider } from './Slider/slider.component';
 export { default as GameCard } from './GameCard/game-card.component';
+export { default as Container } from './Container/container.component';

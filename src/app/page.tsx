@@ -1,5 +1,5 @@
-import Main from '@/components/main/main.component';
+import Home from '@/templates/Home/home.component';
 
-export default function Home() {
-  return <Main />;
+export default function Index() {
+  return <Home />;
 }
