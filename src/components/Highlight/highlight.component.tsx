@@ -8,7 +8,7 @@ export type HighlightProps = {
   buttonLink: string;
   backgroundImage: string;
   floatImage?: string;
-  alignment?: 'left' | 'right';
+  alignment: 'left' | 'right';
 };
 
 const Highlight = ({
