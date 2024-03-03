@@ -26,6 +26,7 @@ export type HomeTemplateProps = {
   freeGames: GameCardProps[];
   freeHighlight: HighlightProps;
 };
+
 const Home = ({
   banners,
   newGames,

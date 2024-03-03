@@ -1,5 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
-
 export default {
   grid: {
     container: '130rem',
