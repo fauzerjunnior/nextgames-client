@@ -4,11 +4,11 @@ import { Button } from '@/components';
 export type HighlightProps = {
   title: string;
   subtitle: string;
-  buttonLabel: string;
-  buttonLink: string;
   backgroundImage: string;
   floatImage?: string;
-  alignment: 'left' | 'right';
+  buttonLabel: string;
+  buttonLink: string;
+  alignment?: 'right' | 'left';
 };
 
 const Highlight = ({
