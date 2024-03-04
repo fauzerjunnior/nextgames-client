@@ -20,6 +20,9 @@ jobs:
       - name: Linting
         run: npm run lint
 
+      - name: Typecheck
+        run: yarn typecheck
+
       - name: Testing
         run: npm run test:ci
 
