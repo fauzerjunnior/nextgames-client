@@ -8,7 +8,7 @@ describe('Banner', () => {
     subtitle: '<p>Play the new <strong>CrashLands</strong> season</p>',
     img: 'img/test.jpg',
     buttonLabel: 'Buy now',
-    buttonLink: '/games/crashlands'
+    buttonLink: '/games/crashlands',
   };
 
   it('should render the Banner', () => {

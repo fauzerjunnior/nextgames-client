@@ -6,9 +6,9 @@ export default {
   component: Logo,
   parameters: {
     backgrounds: {
-      default: 'next-dark'
-    }
-  }
+      default: 'next-dark',
+    },
+  },
 } as Meta;
 
 export const Default: StoryObj = {};

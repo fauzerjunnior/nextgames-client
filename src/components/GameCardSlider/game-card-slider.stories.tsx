@@ -12,9 +12,9 @@ export default {
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
-      default: 'next-dark'
-    }
-  }
+      default: 'next-dark',
+    },
+  },
 } as Meta;
 
 export const Default = (args: GameCardProps[]) => (

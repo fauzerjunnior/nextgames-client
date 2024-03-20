@@ -40,7 +40,7 @@ const wrapperModifiers = {
     &:hover {
       color: ${darken(0.1, theme.colors.primary)};
     }
-  `
+  `,
 };
 
 export const Wrapper = styled.button<WrapperProps>`

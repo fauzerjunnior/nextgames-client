@@ -8,7 +8,7 @@ const props = {
   subtitle: 'Heading 2',
   buttonLabel: 'Buy now',
   buttonLink: '/link',
-  backgroundImage: 'img/cover-image.jpg'
+  backgroundImage: 'img/cover-image.jpg',
 };
 
 describe('Highlight', () => {
@@ -29,7 +29,7 @@ describe('Highlight', () => {
     const { container } = renderWithTheme(<Highlight {...props} />);
 
     expect(container.firstChild).toHaveStyle({
-      backgroundImage: `url(${props.backgroundImage})`
+      backgroundImage: `url(${props.backgroundImage})`,
     });
   });
 
@@ -51,7 +51,7 @@ describe('Highlight', () => {
     );
 
     expect(container.firstChild).toHaveStyleRule('text-align', 'right', {
-      modifier: `${S.Content}`
+      modifier: `${S.Content}`,
     });
   });
 
@@ -66,7 +66,7 @@ describe('Highlight', () => {
     );
 
     expect(container.firstChild).toHaveStyleRule('text-align', 'left', {
-      modifier: `${S.Content}`
+      modifier: `${S.Content}`,
     });
   });
 });

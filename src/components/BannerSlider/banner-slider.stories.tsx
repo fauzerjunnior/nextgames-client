@@ -7,14 +7,14 @@ export default {
   title: 'BannerSlider',
   component: BannerSlider,
   args: {
-    items
+    items,
   },
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
-      default: 'next-dark'
-    }
-  }
+      default: 'next-dark',
+    },
+  },
 } as Meta;
 
 export const Default: StoryFn<BannerSliderProps> = (args) => (

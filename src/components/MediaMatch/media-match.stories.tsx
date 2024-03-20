@@ -3,7 +3,7 @@ import MediaMatch from './media-match.component';
 
 export default {
   title: 'MediaMatch',
-  component: MediaMatch
+  component: MediaMatch,
 } as Meta;
 
 export const Desktop = () => {
@@ -24,6 +24,6 @@ export const Mobile = () => {
 
 Mobile.parameters = {
   viewport: {
-    defaultViewport: 'mobile1'
-  }
+    defaultViewport: 'mobile1',
+  },
 };

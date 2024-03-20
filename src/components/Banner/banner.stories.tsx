@@ -9,8 +9,8 @@ export default {
     title: 'Defy death',
     subtitle: '<p>Play the new <strong>CrashLands</strong> season</p>',
     buttonLabel: 'Buy now',
-    buttonLink: '/games/crashlands'
-  }
+    buttonLink: '/games/crashlands',
+  },
 } as Meta;
 
 export const Default: StoryFn<BannerProps> = (args) => (
@@ -21,7 +21,7 @@ export const Default: StoryFn<BannerProps> = (args) => (
 
 export const WithRibbon: StoryFn<BannerProps> = (args) => {
   const withRibbonArgs = {
-    ...args
+    ...args,
   };
 
   return (

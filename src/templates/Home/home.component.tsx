@@ -6,7 +6,7 @@ import {
   Footer,
   Heading,
   BannerSlider,
-  Highlight
+  Highlight,
 } from '@/components';
 import { BannerProps } from '@/components/Banner/banner.component';
 import { GameCardProps } from '@/components/GameCard/game-card.component';
@@ -35,7 +35,7 @@ const Home = ({
   freeGames,
   mostPopularGames,
   upcommingHighlight,
-  upcommingMoreGames
+  upcommingMoreGames,
 }: HomeTemplateProps) => {
   return (
     <section>

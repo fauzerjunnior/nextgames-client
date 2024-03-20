@@ -3,7 +3,7 @@ import Heading, { HeadingProps } from './heading.component';
 
 export default {
   title: 'Heading',
-  component: Heading
+  component: Heading,
 } as Meta;
 
 export const Default: StoryObj<HeadingProps> = (args: HeadingProps) => (
@@ -15,5 +15,5 @@ Default.args = {
   color: 'black',
   size: 'medium',
   lineBottom: false,
-  lineLeft: true
+  lineLeft: true,
 };
