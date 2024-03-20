@@ -8,7 +8,7 @@ describe('Logo', () => {
     const logoComponent = screen.getByLabelText(/Next Games/i).parentElement;
 
     expect(logoComponent).toHaveStyle({
-      color: '#FAFAFA'
+      color: '#FAFAFA',
     });
   });
 
@@ -17,7 +17,7 @@ describe('Logo', () => {
     const logoComponent = screen.getByLabelText(/Next Games/i).parentElement;
 
     expect(logoComponent).toHaveStyle({
-      color: '#030517'
+      color: '#030517',
     });
   });
 
@@ -26,7 +26,7 @@ describe('Logo', () => {
     const logoComponent = screen.getByLabelText(/Next Games/i).parentElement;
 
     expect(logoComponent).toHaveStyle({
-      width: '15rem'
+      width: '15rem',
     });
   });
 
@@ -35,16 +35,19 @@ describe('Logo', () => {
     const logoComponent = screen.getByLabelText(/Next Games/i).parentElement;
 
     expect(logoComponent).toHaveStyle({
-      width: '27rem'
+      width: '27rem',
     });
   });
 
   it('should render a bigger logo without text on mobile if hideOnMobile', () => {
     renderWithTheme(<Logo hideOnMobile />);
-    const logoComponent = screen.getByLabelText(/Next Games/i).parentElement;
 
-    expect(logoComponent).toHaveStyleRule('width', '5.8rem', {
-      media: '(max-width:  768px)'
-    });
+    expect(screen.getByLabelText(/Next Games/i).parentElement).toHaveStyleRule(
+      'width',
+      '5.8rem',
+      {
+        media: '(max-width: 768px)',
+      }
+    );
   });
 });

@@ -1,23 +1,18 @@
 module.exports = {
   testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/.storybook/'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
-    '!src/app/**',
-    '!src/lib/registry.tsx',
+    '!src/pages/**',
+    '!src/lib/**',
     '!src/@types/**',
     '!src/styles/**',
-    '!src/**/*.stories.tsx'
+    '!src/**/*.stories.tsx',
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
-  modulePaths: ['<rootDir>/src/', '<rootDir>/.jest/'],
-  transform: {
-    '^.+\\.(.js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]
-  },
+  modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
   moduleNameMapper: {
-    '^styled-components':
-      'styled-components/dist/styled-components.browser.cjs.js',
-    '^@/(.*)$': '<rootDir>/src/$1'
-  }
+    '^@/(.*)$': '<rootDir>/src/$1',
+  },
 };

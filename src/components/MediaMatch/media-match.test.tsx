@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+
 import MediaMatch from './media-match.component';
 
 describe('<MediaMatch />', () => {
@@ -28,11 +29,11 @@ describe('<MediaMatch />', () => {
 
   it('should show or hide based on the media passed', () => {
     expect(desktopHeading.parentElement).toHaveStyleRule('display', 'block', {
-      media: '(min-width:  768px)'
+      media: '(min-width: 768px)',
     });
 
     expect(mobileHeading.parentElement).toHaveStyleRule('display', 'block', {
-      media: '(max-width:  768px)'
+      media: '(max-width: 768px)',
     });
   });
 });
