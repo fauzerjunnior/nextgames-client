@@ -6,20 +6,20 @@ export default {
   component: Menu,
   parameters: {
     backgrounds: {
-      default: 'next-dark'
-    }
-  }
+      default: 'next-dark',
+    },
+  },
 } as Meta;
 
 export const Default: StoryObj<MenuProps> = {
   args: {
-    username: ''
-  }
+    username: '',
+  },
 };
 
 Default.parameters = {
   layout: 'fullscreen',
   backgrounds: {
-    default: 'dark'
-  }
+    default: 'dark',
+  },
 };

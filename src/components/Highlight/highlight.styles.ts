@@ -20,7 +20,7 @@ const wrapperModifiers = {
     ${Content} {
       text-align: left;
     }
-  `
+  `,
 };
 
 export const Wrapper = styled.main<WrapperProps>`

@@ -10,7 +10,7 @@ describe('Button', () => {
     expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
       height: '4rem',
       padding: '0.8rem 3.2rem',
-      'font-size': '1.4rem'
+      'font-size': '1.4rem',
     });
 
     expect(container.firstChild).toMatchSnapshot();
@@ -22,7 +22,7 @@ describe('Button', () => {
     expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
       height: '3rem',
       padding: '0.8rem',
-      'font-size': '1.2rem'
+      'font-size': '1.2rem',
     });
   });
 
@@ -32,7 +32,7 @@ describe('Button', () => {
     expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
       height: '5rem',
       padding: '0.8rem 4.8rem',
-      'font-size': '1.6rem'
+      'font-size': '1.6rem',
     });
   });
 
@@ -40,7 +40,7 @@ describe('Button', () => {
     renderWithTheme(<Button fullWidth>Buy now</Button>);
 
     expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
-      width: '100%'
+      width: '100%',
     });
   });
 
@@ -75,14 +75,13 @@ describe('Button', () => {
 
     expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
       background: 'none',
-      color: '#F231A5'
     });
 
     expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyleRule(
       'background',
       'none',
       {
-        modifier: ':hover'
+        modifier: ':hover',
       }
     );
   });

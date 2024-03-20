@@ -3,7 +3,7 @@ import Footer from './footer.component';
 
 export default {
   title: 'Footer',
-  component: Footer
+  component: Footer,
 } as Meta;
 
 export const Default = () => (
@@ -11,7 +11,7 @@ export const Default = () => (
     style={{
       maxWidth: '130rem',
       margin: '0 auto',
-      padding: '0 1.5rem'
+      padding: '0 1.5rem',
     }}
   >
     <Footer />

@@ -9,14 +9,14 @@ export const parameters = {
     values: [
       {
         name: 'next-light',
-        value: theme.colors.white
+        value: theme.colors.white,
       },
       {
         name: 'next-dark',
-        value: theme.colors.mainBg
-      }
-    ]
-  }
+        value: theme.colors.mainBg,
+      },
+    ],
+  },
 };
 
 export const decorators = [
@@ -25,5 +25,5 @@ export const decorators = [
       <GlobalStyles removeBg />
       <Story />
     </ThemeProvider>
-  )
+  ),
 ];

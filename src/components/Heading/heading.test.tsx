@@ -7,7 +7,7 @@ describe('Heading', () => {
     renderWithTheme(<Heading>Next Games</Heading>);
 
     expect(screen.getByRole('heading', { name: /next games/i })).toHaveStyle({
-      color: '#FAFAFA'
+      color: '#FAFAFA',
     });
   });
 
@@ -15,7 +15,7 @@ describe('Heading', () => {
     renderWithTheme(<Heading color="black">Next Games</Heading>);
 
     expect(screen.getByRole('heading', { name: /next games/i })).toHaveStyle({
-      color: '#030517'
+      color: '#030517',
     });
   });
 
@@ -27,7 +27,7 @@ describe('Heading', () => {
     );
 
     expect(screen.getByRole('heading', { name: /next games/i })).toHaveStyle({
-      'border-left': '0.7rem solid #3CD3C1'
+      'border-left': '0.7rem solid #3CD3C1',
     });
   });
 
@@ -37,7 +37,7 @@ describe('Heading', () => {
     expect(
       screen.getByRole('heading', { name: /next games/i })
     ).toHaveStyleRule('border-bottom', '0.4rem solid #F231A5', {
-      modifier: '::after'
+      modifier: '::after',
     });
   });
 
@@ -51,7 +51,7 @@ describe('Heading', () => {
     expect(
       screen.getByRole('heading', { name: /next games/i })
     ).toHaveStyleRule('width', '3rem', {
-      modifier: '::after'
+      modifier: '::after',
     });
   });
 
@@ -65,7 +65,7 @@ describe('Heading', () => {
     const heading = screen.getByRole('heading', { name: /next games/i });
     expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #3CD3C1' });
     expect(heading).toHaveStyleRule('border-bottom', '0.4rem solid #3CD3C1', {
-      modifier: '::after'
+      modifier: '::after',
     });
   });
 });

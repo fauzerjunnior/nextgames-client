@@ -17,7 +17,7 @@ const Heading = ({
   lineLeft = false,
   lineBottom = false,
   lineColor = 'primary',
-  size = 'medium'
+  size = 'medium',
 }: HeadingProps) => (
   <S.Wrapper
     color={color}

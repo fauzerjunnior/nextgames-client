@@ -33,7 +33,7 @@ const wrapperModifiers = {
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xxlarge};
     `}
-  `
+  `,
 };
 
 export const Wrapper = styled.h2<HeadingProps>`

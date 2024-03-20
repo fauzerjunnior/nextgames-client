@@ -13,7 +13,7 @@ export async function getStaticData() {
     upcommingHighlight: highlightMock,
     upcommingMoreGames: gameCardSliderMock,
     freeGames: gameCardSliderMock,
-    freeHighlight: highlightMock
+    freeHighlight: highlightMock,
   };
 }
 

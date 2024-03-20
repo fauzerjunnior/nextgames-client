@@ -7,23 +7,23 @@ export default {
   component: Button,
   argTypes: {
     children: {
-      type: 'string'
-    }
-  }
+      type: 'string',
+    },
+  },
 } as Meta;
 
 export const Default: StoryObj = {
   args: {
-    children: 'Buy now'
-  }
+    children: 'Buy now',
+  },
 };
 
 export const WithIcon: StoryObj = {
   args: {
     size: 'small',
     children: 'Buy now',
-    icon: <AddShoppingCart />
-  }
+    icon: <AddShoppingCart />,
+  },
 };
 
 export const AsLink: StoryObj = {
@@ -32,6 +32,6 @@ export const AsLink: StoryObj = {
     children: 'Buy now',
     icon: <AddShoppingCart />,
     as: 'a',
-    href: '/link'
-  }
+    href: '/link',
+  },
 };

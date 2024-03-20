@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 export default {
   title: 'Slider',
-  component: Slider
+  component: Slider,
 } as Meta;
 
 const settings: Settings = {
@@ -13,7 +13,7 @@ const settings: Settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 1,
 };
 
 const Slide = styled.div`
@@ -40,7 +40,7 @@ const verticalSettings: Settings = {
   verticalSwiping: true,
   dots: true,
   infinite: false,
-  slidesToShow: 1
+  slidesToShow: 1,
 };
 
 export const Vertical: StoryFn = (args) => (

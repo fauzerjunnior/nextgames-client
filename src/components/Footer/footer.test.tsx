@@ -12,19 +12,19 @@ describe('Footer', () => {
 
     expect(
       screen.getByRole('heading', {
-        name: /follow us/i
+        name: /follow us/i,
       })
     ).toBeInTheDocument();
 
     expect(
       screen.getByRole('heading', {
-        name: /links/i
+        name: /links/i,
       })
     ).toBeInTheDocument();
 
     expect(
       screen.getByRole('heading', {
-        name: /contact/i
+        name: /contact/i,
       })
     ).toBeInTheDocument();
 
