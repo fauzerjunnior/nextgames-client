@@ -1,13 +1,25 @@
-import styled, { css } from 'styled-components';
+import styled, { css, DefaultTheme } from 'styled-components';
 import { TextFieldProps } from './text-fied.component';
 
 type IconPositionProps = Pick<TextFieldProps, 'iconPosition'>;
 
-export const Wrapper = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    margin-bottom: ${theme.spacings.small};
+const wrapperModifiers = {
+  disabled: (theme: DefaultTheme) => css`
+    ${Label},
+    ${Input},
+    ${Icon} {
+      cursor: not-allowed;
+      color: ${theme.colors.gray};
+      &::placeholder {
+        color: currentColor;
+      }
+    }
+  `,
+};
+
+export const Wrapper = styled.div<Pick<TextFieldProps, 'disabled'>>`
+  ${({ theme, disabled }) => css`
+    ${disabled && wrapperModifiers.disabled(theme)}
   `}
 `;
 
