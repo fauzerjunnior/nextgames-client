@@ -58,9 +58,17 @@ describe('TextField', () => {
     expect(input).toHaveFocus();
   });
 
-  it('Renders with Icon', () => {
+  it('renders with icon', () => {
     renderWithTheme(<TextField icon={<Email data-testid="icon" />} />);
 
     expect(screen.getByTestId('icon')).toBeInTheDocument();
+  });
+
+  it('renders with icon on the right side', () => {
+    renderWithTheme(
+      <TextField icon={<Email data-testid="icon" />} iconPosition="right" />
+    );
+
+    expect(screen.getByTestId('icon').parentElement).toHaveStyle({ order: 1 });
   });
 });
