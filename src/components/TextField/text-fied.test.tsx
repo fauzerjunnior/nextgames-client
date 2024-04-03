@@ -1,23 +1,24 @@
 import { screen, waitFor } from '@testing-library/react';
-import TextFied from './text-fied.component';
+import TextField from './text-fied.component';
 import { renderWithTheme } from '@/utils/tests/helpers';
 import userEvent from '@testing-library/user-event';
+import { Email } from '@styled-icons/material-outlined';
 
-describe('TextFied', () => {
-  it('should render the TextFied', () => {
-    renderWithTheme(<TextFied label="Label" labelFor="Field" id="Field" />);
+describe('TextField', () => {
+  it('should render the TextField', () => {
+    renderWithTheme(<TextField label="Label" labelFor="Field" id="Field" />);
 
     expect(screen.getByLabelText('Label')).toBeInTheDocument();
   });
 
   it('should render without label', () => {
-    renderWithTheme(<TextFied />);
+    renderWithTheme(<TextField />);
 
     expect(screen.queryByLabelText('Label')).not.toBeInTheDocument();
   });
 
   it('should render with placeholder', () => {
-    renderWithTheme(<TextFied placeholder="hey you" />);
+    renderWithTheme(<TextField placeholder="hey you" />);
 
     expect(screen.getByPlaceholderText('hey you')).toBeInTheDocument();
   });
@@ -25,7 +26,7 @@ describe('TextFied', () => {
   it('changes its value when typing', async () => {
     const onInput = jest.fn();
     renderWithTheme(
-      <TextFied
+      <TextField
         onInput={onInput}
         label="TextField"
         labelFor="TextField"
@@ -47,7 +48,7 @@ describe('TextFied', () => {
 
   it('is accessible by tab', () => {
     renderWithTheme(
-      <TextFied label="TextField" labelFor="TextField" id="TextField" />
+      <TextField label="TextField" labelFor="TextField" id="TextField" />
     );
 
     const input = screen.getByLabelText('TextField');
@@ -55,5 +56,11 @@ describe('TextFied', () => {
 
     userEvent.tab();
     expect(input).toHaveFocus();
+  });
+
+  it('Renders with Icon', () => {
+    renderWithTheme(<TextField icon={<Email data-testid="icon" />} />);
+
+    expect(screen.getByTestId('icon')).toBeInTheDocument();
   });
 });

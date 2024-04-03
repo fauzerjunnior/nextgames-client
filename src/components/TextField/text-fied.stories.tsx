@@ -1,23 +1,25 @@
 import { Meta } from '@storybook/react';
-import TextFied, { TextFiedProps } from './text-fied.component';
+import TextField, { TextFieldProps } from './text-fied.component';
+import { Email } from '@styled-icons/material-outlined';
 
 export default {
-  title: 'TextFied',
-  component: TextFied,
+  title: 'TextField',
+  component: TextField,
   args: {
     label: 'E-mail',
     labelFor: 'Email',
     id: 'Email',
     initialValue: '',
     placeholder: 'john.cage@gmail.com',
+    icon: <Email />,
   },
   argTypes: {
     onInput: { action: 'changed' },
   },
 } as Meta;
 
-export const Default = (args: TextFiedProps) => (
+export const Default = (args: TextFieldProps) => (
   <div style={{ maxWidth: 300, padding: 15 }}>
-    <TextFied {...args} />
+    <TextField {...args} />
   </div>
 );
